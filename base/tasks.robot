@@ -4,11 +4,13 @@ Library         SeleniumLibrary
 Library         Collections
 Library         libraries/ExampleHelper.py
 Resource        keywords/keywords.robot
+Library         BuiltIn
 
 
 *** Keywords ***
 Example Keyword
     Open Browser     http://rpachallenge.com/    Chrome 
+    BuiltIn.Sleep    15
     Log    HOLAMUNDO    level=WARN
     Log    ${name}     
 

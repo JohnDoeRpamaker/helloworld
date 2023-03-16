@@ -10,13 +10,14 @@ Library         BuiltIn
 *** Keywords ***
 Example Keyword
     Open Browser     https://rpamaker.com/    Chrome
-    BuiltIn.Sleep    10
+    BuiltIn.Sleep    30
     Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[1]/a
-    BuiltIn.Sleep    10
+    BuiltIn.Sleep    30
     Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[2]/a
-    BuiltIn.Sleep    10
-    Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[3]/div/div/div/nav[1]/ul/li[2]/a
-    BuiltIn.Sleep    10
+    BuiltIn.Sleep    30
+    Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[3]/a
+    BuiltIn.Sleep    30
+                    
     Log    HOLAMUNDO    level=WARN
     Log    Correcto     
 

@@ -16,8 +16,7 @@ Example Keyword
     Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[2]/a
     BuiltIn.Sleep    5
     Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[3]/a
-    BuiltIn.Sleep    5
-                    
+
     Log    HOLAMUNDO    level=WARN
     Log    Correcto     
 

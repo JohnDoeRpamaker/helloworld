@@ -9,8 +9,14 @@ Library         BuiltIn
 
 *** Keywords ***
 Example Keyword
-    Open Browser     http://rpachallenge.com/    Chrome 
-    BuiltIn.Sleep    100
+    Open Browser     https://rpamaker.com/    Chrome
+    BuiltIn.Sleep    10
+    Click Element   /html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[1]/a
+    BuiltIn.Sleep    10
+    Click Element   /html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[2]/a
+    BuiltIn.Sleep    10
+    Click Element   /html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[3]/div/div/div/nav[1]/ul/li[2]/a
+    BuiltIn.Sleep    10
     Log    HOLAMUNDO    level=WARN
     Log    Correcto     
 

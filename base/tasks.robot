@@ -10,9 +10,9 @@ Library         BuiltIn
 *** Keywords ***
 Example Keyword
     Open Browser     http://rpachallenge.com/    Chrome 
-    BuiltIn.Sleep    15
+    BuiltIn.Sleep    100
     Log    HOLAMUNDO    level=WARN
-    Log    ${name}     
+    Log    Correcto     
 
 
 *** Tasks ***

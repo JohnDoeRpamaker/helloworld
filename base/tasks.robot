@@ -1,31 +1,31 @@
 *** Settings ***
 Documentation   Template robot main suite.
+Library         OperatingSystem
 Library         SeleniumLibrary
 Library         Collections
-Library         libraries/ExampleHelper.py
-Resource        keywords/keywords.robot
-Library         BuiltIn
 
+*** Variables ***
 
 *** Keywords ***
-Example Keyword
-    Open Browser     https://rpamaker.com/    Chrome
-    BuiltIn.Sleep    25
-    Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[1]/a
-    BuiltIn.Sleep    5
-    Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[2]/a
-    BuiltIn.Sleep    5
-    Click Element   xpath=/html/body/div[1]/section[1]/div[2]/div[1]/div/section/div/div[2]/div/div/div/nav[1]/ul/li[3]/a
+Log in 
+    Open Browser     https://robotsparebinindustries.com/    Chrome
+    Input Text    username    maria
+    Sleep    1
+    Input Password    password    thoushallnotpass    
+    Submit Form    
+    Sleep    2
+    
+Send form
+    Input Text    firstname    Juan
+    Input Text    lastname    Perez
+    Input Text    salesresult    15000
+    Sleep    1
+    Select From List By Value    salestarget    10000
+    Click Button    Submit
 
-    Log    HOLAMUNDO    level=WARN
-    Log    Correcto     
-
-
+    Sleep    2
 *** Tasks ***
 Example Task
-    Example Keyword
-    Example Python Keyword
-    Example Robot Keyword
-
-
-
+    [Documentation]    Example Task
+    Log in
+    Send form

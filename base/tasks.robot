@@ -9,11 +9,12 @@ Library         Collections
 *** Keywords ***
 Log in 
     Open Browser     https://robotsparebinindustries.com/    Chrome
+    Sleep    10
     Input Text    username    maria
-    Sleep    1
+    Sleep    10
     Input Password    password    thoushallnotpass    
     Submit Form    
-    Sleep    2
+    Sleep    1
     
 Send form
     Input Text    firstname    Juan
@@ -27,7 +28,6 @@ Send form
 
 *** Tasks ***
 Example Task
-    [Documentation]    Example Task
-    Sleep    20
+    [Documentation]    Example Task    
     Log in
     Send form

@@ -23,9 +23,11 @@ Send form
     Select From List By Value    salestarget    10000
     Click Button    Submit
     Sleep    2
+    Close Browser
+
 *** Tasks ***
 Example Task
     [Documentation]    Example Task
-    Sleep    10
+    Sleep    20
     Log in
     Send form

@@ -8,7 +8,7 @@ Library         Collections
 
 *** Keywords ***
 Log in 
-    Open Browser     https://robotsparebinindustries.com/    Chrome
+    Open Browser     https://robotsparebinindustries.com    Chrome
     Sleep    10
     Input Text    username    maria
     Sleep    10

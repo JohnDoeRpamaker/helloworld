@@ -11,10 +11,10 @@ Log in
     Open Browser     https://robotsparebinindustries.com    Chrome
     Sleep    10
     Input Text    username    maria
-    Sleep    10
+    Sleep    5
     Input Password    password    thoushallnotpass    
     Submit Form    
-    Sleep    1
+    Sleep    5
     
 Send form
     Input Text    firstname    Juan

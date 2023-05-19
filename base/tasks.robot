@@ -17,8 +17,8 @@ Log in
     Sleep    5
     
 Send form
-    Input Text    firstname    Juan
-    Input Text    lastname    Perez
+    Input Text    firstname    
+    Input Text    lastname    
     Input Text    salesresult    15000
     Sleep    1
     Select From List By Value    salestarget    10000
